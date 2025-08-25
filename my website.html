@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #000; /* black background */
+      color: #f8f5f2; /* nude/white text */
+    }
+    header {
+      background: linear-gradient(135deg, #000, #1a1a1a, #0077b6);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #f8f5f2;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #ffffff;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      padding: 1.5rem;
+      margin: 1rem 0;
+      color: #f8f5f2;
+    }
+    /* Skills grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .skill {
+      background: #0077b6;
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    }
+    /* Slideshow */
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.7);
+    }
+    .mySlides { display: none; }
+    .mySlides img {
+      width: 100%;
+      border-radius: 0;
+      display: block;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.3);
+    }
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      background: rgba(0,0,0,0.4);
+    }
+    .next { right: 0; border-radius: 3px 0 0 3px; }
+    .prev:hover, .next:hover { background-color: rgba(0,0,0,0.7); }
+    .dot {
+      cursor: pointer;
+      height: 12px;
+      width: 12px;
+      margin: 0 3px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    .active, .dot:hover { background-color: #0077b6; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Admin Assistant | Talent Coordinator | Recruiter</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>With 5 years of experience in administrative assistance and talent coordination, I specialize in streamlining operations, managing communications, and supporting recruitment processes. I thrive in fast-paced environments, balancing organizational efficiency with people-centered coordination to deliver results.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills Snapshot</h2>
+    <div class="skills-grid">
+      <div class="skill">Email Management</div>
+      <div class="skill">Calendar Management</div>
+      <div class="skill">Document Preparation</div>
+      <div class="skill">Talent Sourcing</div>
+      <div class="skill">Interview Coordination</div>
+      <div class="skill">Client Communication</div>
+      <div class="skill">Problem Solving</div>
+      <div class="skill">Project Coordination</div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Admin Assistant</h3>
+      <p>Efficiently managed scheduling, email correspondence, and document organization to support executives and teams. Ensured smooth daily operations by coordinating meetings and maintaining accurate records.</p>
+    </div>
+    <div class="card">
+      <h3>Talent Coordinator</h3>
+      <p>Handled end-to-end candidate coordination including sourcing, scheduling interviews, and maintaining applicant records. Acted as the bridge between hiring managers and candidates for a seamless recruitment experience.</p>
+    </div>
+    <div class="card">
+      <h3>Technical Support Associate</h3>
+      <p>Provided troubleshooting and technical support across software and hardware issues. Delivered excellent customer service by resolving problems quickly and maintaining strong client relationships.</p>
+    </div>
+    <div class="card">
+      <h3>Account Manager | Corporate Recruiter</h3>
+      <p>Managed client relationships, aligned recruitment strategies with business needs, and delivered qualified candidates. Balanced account management with corporate recruitment responsibilities to ensure client satisfaction and growth.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="slideshow-container">
+      <!-- 9 Slides -->
+      <div class="mySlides fade"><img src="images/sample1.jpg" alt="Portfolio Sample 1"><div class="overlay"></div></div>
+<div class="mySlides fade"><img src="images/sample2.jpg" alt="Portfolio Sample 2"><div class="overlay"></div></div>
+<div class="mySlides fade"><img src="images/sample3.jpg" alt="Portfolio Sample 3"><div class="overlay"></div></div>
+<div class="mySlides fade"><img src="images/sample4.jpg" alt="Portfolio Sample 4"><div class="overlay"></div></div>
+<div class="mySlides fade"><img src="images/sample5.jpg" alt="Portfolio Sample 5"><div class="overlay"></div></div>
+<div class="mySlides fade"><img src="images/sample6.jpg" alt="Portfolio Sample 6"><div class="overlay"></div></div>
+<div class="mySlides fade"><img src="images/sample7.jpg" alt="Portfolio Sample 7"><div class="overlay"></div></div>
+<div class="mySlides fade"><img src="images/sample8.jpg" alt="Portfolio Sample 8"><div class="overlay"></div></div>
+<div class="mySlides fade"><img src="images/sample9.jpg" alt="Portfolio Sample 9"><div class="overlay"></div></div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <div style="text-align:center; margin-top:10px;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+<span class="dot" onclick="currentSlide(2)"></span>
+<span class="dot" onclick="currentSlide(3)"></span>
+<span class="dot" onclick="currentSlide(4)"></span>
+<span class="dot" onclick="currentSlide(5)"></span>
+<span class="dot" onclick="currentSlide(6)"></span>
+<span class="dot" onclick="currentSlide(7)"></span>
+<span class="dot" onclick="currentSlide(8)"></span>
+<span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: as.ronquillo@gmail.com</p>
+      <p>Upwork: https://www.upwork.com/freelancers/~01195b594d49ebca14</p>
+	  <p>LinkedIn: https://www.linkedin.com/in/aya-ronquillo-32071329b/</p>
+    </div>
+  </section>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function plusSlides(n) {
+      slideIndex += n - 1; 
+      showSlides();
+    }
+    function currentSlide(n) {
+      slideIndex = n - 1;
+      showSlides();
+    }
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 10000);
+    }
+  </script>
+</body>
+</html>
